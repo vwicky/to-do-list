@@ -1,3 +1,12 @@
+h1, 
+h2 {
+  transition: color 0.1s;
+}
+h1:hover,
+h2:hover {
+  color: #DC5F00;
+}
+
 
 .content {
   display: flex;
@@ -17,4 +26,28 @@
 
 .right {
   flex: 1;
+  position:relative;
+
+}
+.right:hover {
+  background-color: rgba(128, 128, 128, 0.25);
+}
+
+.right:hover .dropDownMenu {
+  display: flex;
+}
+
+.dropDownMenu {
+
+  position:fixed;
+  width: 25%;
+  
+  display: none;
+  flex-direction: column;
+
+  box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.5);
+}
+.dropDownMenu button {
+  padding: 10px 0px;
+  
 }

@@ -71,7 +71,7 @@
   /* border: 1px solid red; */
 }
 .inputHolderIn input {
-  padding: 8px 10px; /* Adjusted padding */
+  padding: 10px 10px; /* Adjusted padding */
   border: none;
   border-radius: 10px 0px 0px 10px;
 }
@@ -79,12 +79,21 @@
 .inputHolderIn button {
   padding: 8px 10px; /* Adjusted padding */
 
-  border: none;
+  border: 2px solid transparent;
   border-radius: 0px 10px 10px 0px;
   background-color: #DC5F00;
 
   color: #373A40;
   font-weight: bold;
+
+  transition: background-color 0.1s, 
+              color 0.1s,
+              border 0.1s;
+}
+.inputHolderIn button:hover {
+  background-color: transparent;
+  border: 2px solid #DC5F00;
+  color: #DC5F00;
 }
 
 #urgencyPicker {
