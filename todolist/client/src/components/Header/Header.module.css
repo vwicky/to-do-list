@@ -1,0 +1,20 @@
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
+
+.left {
+  flex: 1;
+}
+
+.center {
+  flex: 2;
+}
+
+.right {
+  flex: 1;
+}

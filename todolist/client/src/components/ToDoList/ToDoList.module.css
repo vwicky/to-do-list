@@ -1,0 +1,105 @@
+
+.mainBody {
+  background-color: #eeeeee;
+  min-height: 100vh;
+
+  text-align: center;
+  box-shadow: 10px rgba(128, 128, 128, 0.25);
+}
+.mainBody h1 {
+  padding: 20px 0px;
+}
+
+.contentHolder {
+  min-height: 100vh;
+  /* border: 1px solid red; */
+
+  display: flex;
+  flex-direction: column;
+
+}
+
+.listItemElement {
+  border: 2px solid #686D76;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px #686d767c;
+
+  margin: 10px 20px;
+  padding: 10px 20px;
+}
+.listItemElement button {
+  padding: 12px 30px;
+
+  border: 2px solid #DC5F00;
+  border-radius: 10px;
+  background-color: #DC5F00;
+
+  color: #373A40;
+  font-weight: bold;
+
+  transition: background-color 0.2s, color 0.2s;
+}
+.listItemElement button:hover {
+  border: 2px solid #DC5F00;
+  background-color: transparent;
+
+  color: #DC5F00;
+  font-weight: bold;
+}
+.listItemElement button:active {
+  background-color: rgba(128, 128, 128, 0.25);
+}
+
+.itemTitle {
+  color: #373A40;
+  font-size: 1.5em;
+  text-decoration: underline;
+}
+
+.inputHolder {
+  /* border: 1px solid green; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 20px 0px;
+}
+
+.inputHolderIn {
+  padding: 0;
+
+  /* border: 1px solid red; */
+}
+.inputHolderIn input {
+  padding: 8px 10px; /* Adjusted padding */
+  border: none;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.inputHolderIn button {
+  padding: 8px 10px; /* Adjusted padding */
+
+  border: none;
+  border-radius: 0px 10px 10px 0px;
+  background-color: #DC5F00;
+
+  color: #373A40;
+  font-weight: bold;
+}
+
+#urgencyPicker {
+  background-color: #686D76;
+  border: 2px solid #686D76;
+  border-radius: 0px 0px 10px 10px;
+
+  padding: 0px 70px;
+  height: 100%;
+
+  transition: background-color 0.15s;
+}
+#urgencyPicker:hover {
+  background-color: transparent;
+}
+#urgencyPicker:active {
+  background-color: #686d761d;
+}
